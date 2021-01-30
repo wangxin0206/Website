@@ -1,0 +1,50 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+body{
+	background:url("./backs.jpg");
+	background-repeat:repeat;
+	background-size:1600px 800px;
+	background-position-center:100%;
+	}
+</style>
+<script language = "javascript">
+		function jump1(){
+			window.location.href = "Addused.jsp";
+		}
+		function jump2(){
+			window.location.href = "Showall.jsp";
+		}
+		function jump3(){
+			window.location.href = "Showname.jsp";
+		}
+		function jump4(){
+			window.location.href = "userlogin.jsp";
+		}
+	</script>
+</head>
+<body>
+	<table align="center" class="t1">
+		<tr>
+			<td colspan="2"><h2>欢迎使用家庭账本</h2></td>
+		</tr>
+		<tr>
+			<td><input type="button" style="margin-left:50px;margin-top:5px" value="添加收支信息" onclick="jump1()" ></td>
+		</tr>
+		<tr>
+			<td><input type="button" style="margin-left:50px;margin-top:5px" value="查看全部收支" onclick="jump2()"></td>
+		</tr>
+		<tr>
+			<td><input type="button" style="margin-left:50px;margin-top:5px" value="个人收支查询" onclick="jump3()"></td>
+		</tr>
+		<tr>
+			<td><input type="button" style="margin-left:77px;margin-top:5px" value="退出" onclick="jump4()"></td>
+		</tr>
+	</table>
+</body>
+</html>
